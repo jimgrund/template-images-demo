@@ -12,4 +12,5 @@ config:
     image: docker.ouroath.com:4443/screwdriver/rhel7-base:latest
     steps:
         - hello: echo hello world
-        - oscheck: uname -a
+        - unameout: uname -a
+        - oscheck: cat /etc/redhat-release
