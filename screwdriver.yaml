@@ -1,0 +1,18 @@
+shared:
+    image: node:6
+    environment:
+        VERSION: "version: 0.0.1"
+        EMAIL: "maintainer: james.imgrund@oath.com"
+
+jobs:
+    main:
+        requires: [~pr, ~commit]
+        steps:
+            - install: npm install screwdriver-template-main
+            - validate: ./node_modules/.bin/template-validate
+            - envprint: env
+            - publish: |
+                if [ -z "$SD_PULL_REQUEST" ]
+                then
+                    cp sd-template.yaml ${SD_ARTIFACTS_DIR} && node ./node_modules/.bin/template-publish
+                fi
