@@ -1,15 +1,15 @@
 name: images-test
 namespace: images-test
-version: '1.1'
+version: '2.0'
 description: Test template for multiple images
 maintainer: james.imgrund@oath.com
 images:
-    RHEL7: docker.ouroath.com:4443/screwdriver/rhel7-base:latest
-    RHEL6: docker.ouroath.com:4443/screwdriver/rhel6-base:latest
-    RHEL5: docker.ouroath.com:4443/screwdriver/rhel5-base:latest
+    RHEL7: richxsl/rhel7:latest
+    RHEL6: richxsl/rhel6.5:latest
+    RHEL5: fatherlinux/centos5-base:latest
 
 config:
-    image: docker.ouroath.com:4443/screwdriver/rhel7-base:latest
+    image: richxsl/rhel7:latest
     steps:
         - hello: echo hello world
         - unameout: uname -a
