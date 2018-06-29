@@ -1,8 +1,8 @@
 name: images-test
-namespace: images-test
-version: '2.0'
+namespace:  test-ns
+version: '2.1'
 description: Test template for multiple images
-maintainer: james.imgrund@oath.com
+maintainer: bruce@wayne.com
 images:
     RHEL7: richxsl/rhel7:latest
     RHEL6: richxsl/rhel6.5:latest
