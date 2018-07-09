@@ -1,6 +1,6 @@
 name: images-test
 namespace:  test-ns
-version: '2.2'
+version: '2.3'
 description: Test template for multiple images
 maintainer: bruce@wayne.com
 images:
