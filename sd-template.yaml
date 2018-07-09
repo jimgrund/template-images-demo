@@ -11,9 +11,10 @@ config:
     annotations:
         beta.screwdriver.cd/cpu: HIGH
         beta.screwdriver.cd/ram: LOW
-    email:
-        addresses: [bruce@wayne.com]
-        statuses: [SUCCESS, FAILURE]
+    settings:
+        email:
+            addresses: [bruce@wayne.com]
+            statuses: [SUCCESS, FAILURE]
     environment:
         FOO: bar
         BAR: bumble
