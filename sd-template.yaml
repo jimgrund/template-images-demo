@@ -12,6 +12,7 @@ config:
         beta.screwdriver.cd/cpu: HIGH
         beta.screwdriver.cd/ram: LOW
     settings:
+        slack: 'mychannel'
         email:
             addresses: [bruce@wayne.com]
             statuses: [SUCCESS, FAILURE]
