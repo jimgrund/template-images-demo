@@ -1,7 +1,7 @@
 shared:
     image: node:6
     environment:
-        VERSION: "version: 0.0.1"
+        VERSION: "version: 0.0.2"
         EMAIL: "maintainer: james.imgrund@oath.com"
     secrets:
       - GH_DEPLOY_KEY
