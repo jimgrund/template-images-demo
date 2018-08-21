@@ -3,6 +3,8 @@ shared:
     environment:
         VERSION: "version: 0.0.1"
         EMAIL: "maintainer: james.imgrund@oath.com"
+    secrets:
+      - GH_DEPLOY_KEY
 
 jobs:
     main:
